@@ -1,0 +1,22 @@
+{
+  "name": "playwrightautomationframework",
+  "version": "1.0.0",
+  "description": "Playwright Web & API framework with Mocha and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "webTests": "npx playwright test --grep @Web",
+    "apiTests": "npx playwright test --grep @Api",
+    "webTestsInCucumber": "npx cucumber-js --tags=@Web --exit",
+    "apiTestsInCucumber": "npx cucumber-js --tags=@Api --exit"
+  },
+  "keywords": [],
+  "author": "Sathish Kumar Karuppusamy(https://www.linkedin.com/in/sathish-kumar-k-2bb914156/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.11"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.7.0"
+  }
+}
