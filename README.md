@@ -7,7 +7,7 @@ Pre-requisites:
     2. Install Vs Code
 
 Steps to install:
-    1. Clone this repo.
+    1. Clone this repo. \n
     2. Install the required dependencies using npm install.(Refer package.json for all dependencies)
 
 Steps to run playwright scripts with Mocha framework:
