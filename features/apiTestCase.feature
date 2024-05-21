@@ -1,4 +1,4 @@
-@Api @Smoke
+@Api @Regression
 Feature: GET & POST Request in playwright
 
     Scenario: GET Request in playwright

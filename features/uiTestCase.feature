@@ -1,4 +1,4 @@
-@Web @Smoke
+@Web @Regression
 Feature: Login functionality on practice test automation website
 
     Scenario: Verify login functionality is working fine in practice testautomation page
