@@ -13,6 +13,7 @@ Playwright version --> 1.44
 ##Steps to run playwright scripts with Mocha framework:
     1. Execute "npm run webTests" in terminal to run UI/Web tests.
     2. Execute "npm run apiTests" in terminal to run API tests.
+    3. Execute "npm run regressionTestsInMocha" in terminal to run UI & API tests.
 
     Reports:
     1. Please check the reports inside "playwright-report" folder once you have executed the scripts.
@@ -20,6 +21,7 @@ Playwright version --> 1.44
 ##Steps to run playwright scripts with Cucumber framework:
     1. Execute "npm run webTestsInCucumber" in terminal to run UI/Web tests.
     2. Execute "npm run apiTestsInCucumber" in terminal to run API tests.
+    3. 3. Execute "npm run regressionTestsInCucumber" in terminal to run UI & API tests.
 
     Reports:
     1. Please check "cucumber-report.html" file once you have executed the scripts.
