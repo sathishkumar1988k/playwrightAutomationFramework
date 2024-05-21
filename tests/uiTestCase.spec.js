@@ -1,5 +1,13 @@
 import { test, expect } from '@playwright/test';
 
+test('Verify user successfully logged into practice testAutomation page',{tag:['@Web','@Smoke']}, async({page}) => {
+    await page.goto('https://practicetestautomation.com/practice-test-login/');
+    await page.locator("[name='username']").fill("student"); // Enter the user name in the user name field
+    await page.locator("#password").fill("Password123"); // Enter the password in the password field
+    await page.locator("[id='submit']").click(); // Click on Submit button
+    await expect(page.locator("[class='post-title']")).toContainText("Logged In Successfully");
+});
+
 test('Verify invalid username error message is dsiplayed on practice testAutomation page',{tag:['@Web','@Smoke']}, async({page}) => {
     await page.goto('https://practicetestautomation.com/practice-test-login/');
     await page.locator("[name='username']").fill("Sathish"); // Enter the user name in the user name field

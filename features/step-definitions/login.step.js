@@ -19,6 +19,10 @@ When('the user enter {string} as username and {string} as passwod and click on S
     await this.page.locator("[id='submit']").click(); // Click on Submit button
 });
 
+Then('verify home page is displayed', async function () {
+    await expect(this.page.locator("[class='post-title']")).toContainText("Logged In Successfully");
+});
+
 Then('verify invalid username error message is displayed', async function () {
     await expect(this.page.locator("[id='error']")).toContainText("Your username is invalid!");
 });
